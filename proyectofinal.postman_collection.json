@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "2527040f-d39f-47fa-bed6-098c4ae5f1b6",
+		"name": "proyectofinal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getProd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "pruebas1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678a",
+							"type": "text"
+						},
+						{
+							"key": "categoria",
+							"value": "libros",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/proyectofinal/slim.php/getProd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectofinal",
+						"slim.php",
+						"getProd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "pruebas1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678a",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "C002",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/proyectofinal/slim.php/getDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectofinal",
+						"slim.php",
+						"getDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setProd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "pruebas1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678a",
+							"type": "text"
+						},
+						{
+							"key": "prodJSON",
+							"value": "{\n        \"ISBN\":\"M008\",\n        \"Autor\":\"AutorX\",\n        \"Nombre\":\"Manga3\",\n        \"Editorial\":\"EditorialZ\",\n        \"anio\":2020,\n        \"Precio\":0.00\n        }",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/proyectofinal/slim.php/setProd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectofinal",
+						"slim.php",
+						"setProd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "pruebas1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678a",
+							"type": "text"
+						},
+						{
+							"key": "prodJSON",
+							"value": "{\n\t\t\t\t\"ISBN\":\"M009\",\n\t\t\t\t\"Autor\":\"AutorX\",\n\t\t\t\t\"Nombre\":\"Manga9\",\n\t\t\t\t\"Editorial\":\"EditorialZ\",\n\t\t\t\t\"anio\":2021,\n\t\t\t\t\"Precio\":0.00\n\t\t\t}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/proyectofinal/slim.php/updateProd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectofinal",
+						"slim.php",
+						"updateProd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "pruebas1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678u",
+							"type": "text"
+						},
+						{
+							"key": "newPass",
+							"value": "12345678a",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/proyectofinal/slim.php/updatePass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"proyectofinal",
+						"slim.php",
+						"updatePass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "pruebas1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678a",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "M008",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/proyectofinal/slim.php/deleteProd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyectofinal",
+						"slim.php",
+						"deleteProd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "pruebas1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678a",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/proyectofinal/slim.php/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"proyectofinal",
+						"slim.php",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
